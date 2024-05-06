@@ -1,0 +1,1 @@
+touch out/.nojekyll && git add -f out && git checkout -b temp-gh-pages && git commit -m \"temp comit for deploy\" && git subtree split --prefix out -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages && git checkout main && git branch -D temp-gh-pages
